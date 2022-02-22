@@ -1,0 +1,86 @@
+/* Body */
+body {
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+  font-family: "Roboto", sans-serif; /* NRC standard font */
+  font-size: 1em;
+}
+
+/* Images */
+img {
+  vertical-align: middle;
+}
+
+/* Error message */
+.errorMessage {
+  color: #ce5c43; /* Crisis red */
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+td,
+th {
+  border: 1px solid #d3d3d3; /* Cool grey 7 */
+  padding: 0.5em;
+}
+th {
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  text-align: left;
+}
+
+/* Input table */
+table.input th {
+  background-color: #ff7602; /* NRC Orange */
+  color: white;
+}
+table.input th img.moreInfo {
+  float: right;
+  margin-left: 2em;
+}
+table.input th.required {
+  background-color: #ff7602; /* NRC Orange */
+}
+table.input th.required::after {
+  font-size: 0.8em;
+  content: "(required)";
+}
+table.input th.optional {
+  background-color: #ff7602; /* NRC Orange */
+}
+table.input th.optional::after {
+  font-size: 0.8em;
+  content: "(optional)";
+}
+/* Last row "Generate link" */
+table.input th.interface {
+  background-color: #eae7dd; /* Warm grey 2 */
+  color: black;
+}
+
+/* Output table */
+table#output tbody tr:nth-child(even) {
+  background-color: #ededed; /* Cool grey 3 */
+}
+table#output tbody tr:hover {
+  background-color: #d3d3d3; /* Cool grey 7 */
+}
+
+div#downloadControls img {
+  vertical-align: center;
+}
+a#downloadLink {
+  display: none;
+  font-weight: bold;
+}
+a#downloadLink img {
+  width: 4em;
+  height: 4em;
+  margin-left: 2em;
+}
+
+button#deleteAllRows {
+  display: none;
+}
